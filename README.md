@@ -25,11 +25,11 @@ An AI-powered Flutter application that discovers local businesses, scrapes and a
 ```bash
 git clone https://github.com/yourusername/business_discovery.git
 cd business_discovery
-
+```
 2. Install dependencies:
 ```bash
 flutter pub get
-
+```
 3. Configure your API endpoints in lib/services/:
 
 	- Update baseUrl in review_scraper_service.dart
@@ -39,7 +39,7 @@ flutter pub get
 4. Run the app:
 ```bash
 flutter run
-
+```
 🏗️ Project Structure
 
 lib/
@@ -86,13 +86,13 @@ final Map<String, Color> categoryColors = {
   'Bar': Colors.purple,
   // Add more...
 };
-
-Categories
+```
+Categories:
 Modify the categories list to add/remove categories:
 ```dart
 final List<String> categories = ['Food', 'Bar', 'Night Clubs', 'Cafe'];
+```
 
-;
 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 📄 License
@@ -107,88 +107,6 @@ Community contributors
 Your Name - your.email@example.com
 Project Link: https://github.com/yourusername/business_discovery
 
-### **.gitignore**
-```gitignore
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# VSCode related
-.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-/build/
-
-# Web related
-lib/generated_plugin_registrant.dart
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-# iOS/XCode related
-**/ios/**/*.mode1v3
-**/ios/**/*.mode2v3
-**/ios/**/*.moved-aside
-**/ios/**/*.pbxuser
-**/ios/**/*.perspectivev3
-**/ios/**/*sync/
-**/ios/**/.sconsign.dblite
-**/ios/**/.tags*
-**/ios/**/.vagrant/
-**/ios/**/DerivedData/
-**/ios/**/Icon?
-**/ios/**/Pods/
-**/ios/**/.symlinks/
-**/ios/**/profile
-**/ios/**/xcuserdata
-**/ios/.generated/
-**/ios/Flutter/App.framework
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/Flutter.podspec
-**/ios/Flutter/Generated.xcconfig
-**/ios/Flutter/ephemeral/
-**/ios/Flutter/app.flx
-**/ios/Flutter/app.zip
-**/ios/Flutter/flutter_assets/
-**/ios/Flutter/flutter_export_environment.sh
-**/ios/ServiceDefinitions.json
-**/ios/Runner/GeneratedPluginRegistrant.*
-
-# Exceptions to above rules.
-!**/ios/**/default.mode1v3
-!**/ios/**/default.mode2v3
-!**/ios/**/default.pbxuser
-!**/ios/**/default.perspectivev3
 
 
 🚀 Quick Start Commands
@@ -226,6 +144,7 @@ echo "Next steps:"
 echo "1. Configure your API endpoints in lib/services/"
 echo "2. Set up your backend (see backend/ directory)"
 echo "3. Run 'flutter run' to start the app"
+```
 
 📊 Sample API Response Formats
 Review Object
@@ -241,7 +160,7 @@ Review Object
   "date": "2024-10-01T19:30:00Z",
   "source": "google"
 }
-
+```
 Tagline Generation Response
 
 ```json
@@ -269,7 +188,7 @@ Sentiment Analysis Response
   ],
   "top_keywords": ["amazing", "perfect", "love", "recommend"]
 }
-
+```
 🎯 Deployment Guide
 Deploy to Firebase (Web)
 
@@ -289,7 +208,7 @@ flutter build web
 
 # Deploy
 firebase deploy
-
+```
 Deploy to Google Play Store (Android)
 ```bash
 # Build release APK
@@ -299,7 +218,7 @@ flutter build apk --release
 flutter build appbundle --release
 
 # APK will be at: build/app/outputs/flutter-apk/app-release.apk
-
+```
 Deploy to App Store (iOS)
 ```bash
 # Build iOS release
@@ -307,7 +226,7 @@ flutter build ios --release
 
 # Open in Xcode for signing and upload
 open ios/Runner.xcworkspace
-
+```
 🧪 Testing
 test/widget_test.dart
 ```dart
@@ -334,9 +253,9 @@ void main() {
     expect(find.text('Bar'), findsOneWidget);
   });
 }
-
+```
 RUN tests:
 ```bash
 flutter test
 
-
+```
